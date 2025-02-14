@@ -1,4 +1,4 @@
-You can test endpoints in exchange-rates-api.http
+You can test endpoints in rest-api/exchange-rates-api.http
 
 or Alternatively:
 

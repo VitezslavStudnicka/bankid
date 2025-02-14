@@ -1,0 +1,19 @@
+### Variables
+@host = http://localhost:8080
+@username = user
+@password = password
+
+### Health Check
+GET {{host}}/actuator/health
+
+### Get Supported Currency Pairs
+GET {{host}}/api/v1/exchange-rates/pairs
+Authorization: Basic {{username}} {{password}}
+
+### Compare Rates for USD
+GET {{host}}/api/v1/exchange-rates/compare?base=USD
+Authorization: Basic {{username}} {{password}}
+
+### Compare Rates for EUR
+GET {{host}}/api/v1/exchange-rates/compare?base=EUR
+Authorization: Basic {{username}} {{password}}
